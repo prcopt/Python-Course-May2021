@@ -1,0 +1,38 @@
+"""S03Q01
+Take 2 numbers from the user. 
+Print which number is a 2 digit number, 
+and which number is a 3 digit number. 
+If it is neither, then print the number as it is
+"""
+# Helper function
+def is_2_or_3_digit(number):
+    if number <= 99 :
+            return 2
+    else:
+            return 3
+        
+def perform_check(number):
+    number 
+    """ This function uses helper functions
+        check_if_2digit
+        check_if_3digit
+        to perform the required operations
+    """
+    if number < 10 or number > 999:
+        print("Number you entered is:",number)
+    else:
+        print("You typed",number,", which is a",is_2_or_3_digit(number)," digit number")
+    return   
+    
+
+def get_number():
+    n = int(input("Key-in any positive Number: "))
+    return n
+  
+# Main starts from here
+num1 = get_number()
+num2 = get_number()
+print("num1 & num2",num1,num2)
+perform_check(num1)
+perform_check(num2)
+
