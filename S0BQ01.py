@@ -17,7 +17,7 @@ def get_YesNo():
         if ans == "YES":
             print("Continue")
             wish = True
-        else:
+        elif ans == "NO":
             break
     return wish
 
