@@ -15,6 +15,7 @@ the 5 digit number provided by the user.
 the user wins the jackpot.
 - If not, then print the random number.
 
+This program makes use of sumops.py
 """
 
 # Implement the helper functions here
