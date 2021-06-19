@@ -7,7 +7,7 @@ in the descending order of their count.
 - Print a separate list of all the words that
 are not repeated in that file.
 
-
+Data File Name: wordcount.txt
 """
 # Helper functions
 
@@ -83,7 +83,7 @@ import sys
 # Main starts from here
 def main():
     
-    RFH = get_filename_as_agrv_if_no_ask("Enter Contact List Data File Name : ","r")
+    RFH = get_filename_as_agrv_if_no_ask("Enter word  Data File Name : ","r")
     words = get_contents(RFH)
     print(words)
     unique = []
