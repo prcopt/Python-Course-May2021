@@ -5,6 +5,7 @@ This file contains names of people and their ages.
 Read the file, and print the list with the oldest person’s name listed first. 
 A sample file [ AGES.TXT ] is shown above :
 
+Test Data File: ages.txt
 
 
 """
@@ -52,10 +53,12 @@ def get_contact_list(RFH):
     print("FILE CONTENTS:-")
     while line != "":
         line = RFH.readline()
-        if line == "":
+        line = line.strip()
+        if line == "": 
             break
-        print(line,end="")
+
         data = line.split(sep="-")
+        print(line)
         data[1] = int(data[1])
         contact_list.append(data)
     item_count = len(contact_list)
@@ -97,3 +100,4 @@ def main():
 
 main()
 
+ 
